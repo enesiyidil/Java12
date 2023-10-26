@@ -57,7 +57,7 @@ public interface ICrud {
 
         try {
             while (allData.get().next()) {
-                T obj = (T) clazz.getDeclaredConstructor().newInstance();
+                T obj = clazz.getDeclaredConstructor().newInstance();
                 for (Method method : declaredMethods) {
                     if (method.getName().contains("set")) {
                         switch (method.getGenericParameterTypes()[0].getTypeName()) {
@@ -80,7 +80,7 @@ public interface ICrud {
             }
             return list;
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Hata");
         }
         return new ArrayList<>();
     }
@@ -92,7 +92,7 @@ public interface ICrud {
             allData = Optional.ofNullable(connection.prepareStatement(query).executeQuery());
             if (allData.isEmpty())
                 return Optional.empty();
-            T obj = (T) clazz.getDeclaredConstructor().newInstance();
+            T obj = clazz.getDeclaredConstructor().newInstance();
             if(!allData.get().next()){
                 throw new RuntimeException("Yanlış id");
             }
@@ -117,7 +117,7 @@ public interface ICrud {
 
             return Optional.of(obj);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Hata");
         }
         return Optional.empty();
     }

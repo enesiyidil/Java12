@@ -84,7 +84,7 @@ public class PersonRepository implements ICrud {
         }
     }
 
-    public Person execute(String firstName, String email) {
+    /*public Person execute(String firstName, String email) {
         String query = "SELECT * FROM persons WHERE firstname= " + firstName + ", email= " + email;
         Statement statement = null;
         Person person = null;
@@ -103,6 +103,6 @@ public class PersonRepository implements ICrud {
             throw new RuntimeException(e);
         }
         return person;
-    }
+    }*/
 
 }
