@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ff5eef-863f-4963-9ccd-23d7d80f7f83" name="Changes" comment="Nlayerd Architecture">
-      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application_Course/_1_Jdbc/JdbcExample002/src/main/java/org/enes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/JdbcExample002/src/main/java/org/enes/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application_Course/_1_Jdbc/JdbcExample002/src/main/java/org/enes/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/JdbcExample002/src/main/java/org/enes/controller/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application_Course/_1_Jdbc/JdbcExample002/src/main/java/org/enes/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/JdbcExample002/src/main/java/org/enes/entity/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application_Course/_1_Jdbc/JdbcExample002/src/main/java/org/enes/repository/ICrud.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/JdbcExample002/src/main/java/org/enes/repository/ICrud.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application_Course/_1_Jdbc/JdbcExample002/src/main/java/org/enes/repository/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/JdbcExample002/src/main/java/org/enes/repository/PersonRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application_Course/_1_Jdbc/JdbcExample002/src/main/java/org/enes/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/JdbcExample002/src/main/java/org/enes/service/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application_Course/_1_Jdbc/JdbcExample002/src/main/java/org/enes/util/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/JdbcExample002/src/main/java/org/enes/util/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application_Course/_1_Jdbc/JdbcExample002/target/classes/org/enes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/JdbcExample002/target/classes/org/enes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Theory_Course/_1_Jdbc/MusteriJDBC/src/main/java/org/enes/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Theory_Course/_1_Jdbc/MusteriJDBC/src/main/java/org/enes/repository/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Theory_Course/_2_ORM/Hibernate01/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/Hibernate01/.idea/gradle.xml" afterDir="false" />
-    </list>
+    <list default="true" id="25ff5eef-863f-4963-9ccd-23d7d80f7f83" name="Changes" comment="JDBC" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +86,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698327823634</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Nlayerd Architecture">
+      <option name="closed" value="true" />
+      <created>1698342517579</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698342517579</updated>
+    </task>
+    <task id="LOCAL-00003" summary="JDBC">
+      <option name="closed" value="true" />
+      <created>1698342609028</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698342609028</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,6 +119,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Nlayerd Architecture" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nlayerd Architecture" />
+    <MESSAGE value="JDBC" />
+    <option name="LAST_COMMIT_MESSAGE" value="JDBC" />
   </component>
 </project>
