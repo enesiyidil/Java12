@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <!-- a SessionFactory instance listed as /jndi/name -->
+    <session-factory>
+
+        <!-- Kullanılacak VT Driver tanımlama -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+
+        <!-- Bağlantı için gerekli değerler: -->
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/Java12HibernateDB</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">1234</property>
+
+        <!-- En önemli ayarlardan bir tanesidir. Bu ayar ile otomatik olarak tablo oluşturma ve güncelleme
+         işlemlerinin modunu belirlersiniz.
+            CREATE      : Proje her yeni başladığında tablolar yeniden oluşturulur. Mevcut tablolar silinir.
+            CREATE-DROP : Create ile aynı işlemi yapıyor. Tek farkı projeyi kapattıpınız an oluşturulan tablolar silinir.
+            UPDATE      : Eğer VT'nda tablo yoksa oluşturur. Varsa yapısal değişiklikleri uygular. Veriler silinmez.
+            VALIDATE    : VT'ndaki tablolar ile projedeki entityler uyumlu olup olmadığını kontrol edip hata varsa hata fırlatır.-->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Hibernate'in arkaplanda çalıştırdığı SQL  sorgusunu konsol ekranına yazmasını sağlamak için: -->
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Yazdığı SQL sorgusunu formatlamak için: -->
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Çok önemli ve genelde unutulan adımdır. -->
+        <!-- Hibernate @Entity ile işaretlenmemiş sınıfları burada mappin içine yazsanız bile maplemez -->
+        <!-- Hibernate sınıf ile VT arasında veri iletişimi kurma yeteneğine -->
+        <mapping class="com.enes.entity.Musteri"/>
+
+    </session-factory>
+
+</hibernate-configuration>
