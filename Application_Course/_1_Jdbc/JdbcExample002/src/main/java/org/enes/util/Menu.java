@@ -2,7 +2,6 @@ package org.enes.util;
 
 import org.enes.controller.PersonController;
 import org.enes.entity.Person;
-import org.enes.repository.PersonRepository;
 
 import java.util.Scanner;
 
@@ -28,6 +27,7 @@ public class Menu {
             System.out.print("Seçiminiz: ");
             int election = scanner.nextInt();
             scanner.nextLine();
+            int id;
             switch (election) {
                 case 1:
                     System.out.print("İsim: ");
@@ -37,11 +37,34 @@ public class Menu {
                     System.out.print("eMail: ");
                     String email = scanner.nextLine();
                     Person person = new Person(firstName, lastName, email);
-                    personController.register(person);
-                    System.out.println("Kayıt başarılı.");
+                    if(personController.register(person)){
+                        System.out.println("Kayıt başarılı.");
+                    }else {
+                        System.out.println("Kayıt başarısız.");
+                    }
                     break;
                 case 2:
+                    System.out.println("person db tüm datalar:");
+                    personController.getAllData();
+                    break;
+                case 3:
+                    personController.deleteAllData();
+                    break;
+                case 4:
 
+                    break;
+                case 5:
+                    System.out.print("Id: ");
+                    id = scanner.nextInt();
+                    scanner.nextLine();
+                    personController.findPersonById(id);
+                    break;
+                case 6:
+                    System.out.print("Id: ");
+                    id = scanner.nextInt();
+                    scanner.nextLine();
+                    personController.deletePersonById(id);
+                    break;
             }
         }
     }

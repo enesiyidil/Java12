@@ -10,7 +10,23 @@ public class PersonService {
     public PersonService(){
         personRepository = new PersonRepository();
     }
-    public void register(Person person){
-        personRepository.save(person);
+    public boolean register(Person person){
+        return personRepository.register(person);
+    }
+
+    public void getAllData() {
+        personRepository.getAllData();
+    }
+
+    public void deleteAllData() {
+        personRepository.deleteAllData();
+    }
+
+    public void findPersonById(int id) {
+        personRepository.findPersonById(id);
+    }
+
+    public void deletePersonById(int id) {
+        personRepository.deletePersonById(id);
     }
 }

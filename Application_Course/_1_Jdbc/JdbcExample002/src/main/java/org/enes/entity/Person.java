@@ -5,7 +5,7 @@ import java.util.Date;
 public class Person {
 
     private int id;
-    private String firtsName;
+    private String firstname;
     private String lastName;
     private Date joinedDate;
     private String email;
@@ -13,15 +13,15 @@ public class Person {
     public Person() {
     }
 
-    public Person(String firtsName, String lastName, String email) {
-        this.firtsName = firtsName;
+    public Person(String firstname, String lastName, String email) {
+        this.firstname = firstname;
         this.lastName = lastName;
         this.email = email;
     }
 
-    public Person(int id, String firtsName, String lastName, Date joinedDate, String email) {
+    public Person(int id, String firstname, String lastName, Date joinedDate, String email) {
         this.id = id;
-        this.firtsName = firtsName;
+        this.firstname = firstname;
         this.lastName = lastName;
         this.joinedDate = joinedDate;
         this.email = email;
@@ -35,12 +35,12 @@ public class Person {
         this.id = id;
     }
 
-    public String getFirtsName() {
-        return firtsName;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setFirtsName(String firtsName) {
-        this.firtsName = firtsName;
+    public void setFirstName(String firstname) {
+        this.firstname = firstname;
     }
 
     public String getLastName() {
@@ -71,7 +71,7 @@ public class Person {
     public String toString() {
         return "Person{" +
                 "id=" + id +
-                ", firtsName='" + firtsName + '\'' +
+                ", firtsName='" + firstname + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", joinedDate=" + joinedDate +
                 ", email='" + email + '\'' +
