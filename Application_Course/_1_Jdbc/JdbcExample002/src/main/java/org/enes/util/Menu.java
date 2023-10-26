@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Menu {
 
     static Scanner scanner = new Scanner(System.in);
-    private PersonController personController;
+    private final PersonController personController;
 
     public Menu() {
         this.personController = new PersonController();
@@ -23,6 +23,7 @@ public class Menu {
             System.out.println("4 --> Database mail guncelleme.");
             System.out.println("5 --> Databasede id ile veri arama");
             System.out.println("6 --> Databasede id ile veri silme.");
+            System.out.println("7 --> Çıkış");
 
             System.out.print("Seçiminiz: ");
             int election = scanner.nextInt();
@@ -65,6 +66,8 @@ public class Menu {
                     scanner.nextLine();
                     personController.deletePersonById(id);
                     break;
+                case 7:
+                    return;
             }
         }
     }

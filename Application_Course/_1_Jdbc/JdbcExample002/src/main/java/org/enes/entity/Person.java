@@ -10,9 +10,6 @@ public class Person {
     private Date joinedDate;
     private String email;
 
-    public Person() {
-    }
-
     public Person(String firstname, String lastName, String email) {
         this.firstname = firstname;
         this.lastName = lastName;
