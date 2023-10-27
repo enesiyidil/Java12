@@ -13,5 +13,7 @@ public class Main {
         Menu menu = new Menu();
         menu.menu();
 
+        System.out.println(Menu.class.getAnnotations()[0]);
+
     }
 }
