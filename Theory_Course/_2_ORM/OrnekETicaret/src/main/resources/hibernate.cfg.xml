@@ -20,8 +20,11 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
 
-        <mapping class="com.enes.entity.Sepet"/>
-        <mapping class="com.enes.entity.Urun"/>
+        <mapping class="com.enes.repository.entity.Musteri"/>
+        <mapping class="com.enes.repository.entity.Satis"/>
+        <mapping class="com.enes.repository.entity.SatisDetay"/>
+        <mapping class="com.enes.repository.entity.Sepet"/>
+        <mapping class="com.enes.repository.entity.Urun"/>
 
     </session-factory>
 

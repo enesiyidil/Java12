@@ -1,25 +1,29 @@
-package com.enes.entity;
+package com.enes.repository.entity;
 
 import lombok.*;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Builder
 @Entity
 @Table(name = "tblurun")
 public class Urun {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int id;
+    Long id;
     String ad;
-    double fiyat;
+    String barkod;
+    String marka;
+    String model;
+    BigDecimal fiyat;
+    Integer stok;
 
-    public Urun(String ad, double fiyat) {
-        this.ad = ad;
-        this.fiyat = fiyat;
-    }
+    @Embedded
+    BaseEntity baseEntity;
 
 }
