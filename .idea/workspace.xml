@@ -4,25 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ff5eef-863f-4963-9ccd-23d7d80f7f83" name="Changes" comment="Hibernate">
-      <change afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/enums/ECinsiyet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/repository/MusteriRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/repository/SatisDetayRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/repository/SatisRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/repository/SepetRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/repository/UrunRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/repository/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/repository/entity/Iletisim.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/repository/entity/Musteri.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/repository/entity/Satis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/repository/entity/SatisDetay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/utility/ICrud.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/utility/MyRepositoryFactory.java" afterDir="false" />
+    <list default="true" id="25ff5eef-863f-4963-9ccd-23d7d80f7f83" name="Changes" comment="Hibernate, NLayer Architecture">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/AtmProject.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject/src/main/java/com/enes/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject/src/main/java/com/enes/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject/src/main/java/com/enes/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject/src/main/java/com/enes/repository/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject/src/main/java/com/enes/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject/src/main/java/com/enes/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject/src/main/java/com/enes/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject/src/main/java/com/enes/util/DbConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject/src/main/java/com/enes/util/JDBCHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject/src/main/java/com/enes/util/RandomGenerateAccountNo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject/src/main/java/com/enes/util/constant/JDBCConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/entity/Sepet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/repository/entity/Sepet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/entity/Urun.java" beforeDir="false" afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/java/com/enes/repository/entity/Urun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +36,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/Application_Course/_1_Jdbc/AtmProject">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/Theory_Course/_2_ORM/Hibernate01">
       <ProjectState />
     </projectState>
@@ -97,12 +106,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "C:/Users/enesb/Documents/Java12BilgeAdamBoost/Java_Project/Application_Course/_1_Jdbc/CarDealer/src/main/java/com/enes/utility",
+    "last_opened_file_path": "C:/Users/enesb/Documents/Java12BilgeAdamBoost/Java_Project/Application_Course/_1_Jdbc/AtmProject/src/main/java/com/enes/util",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\enesb\Documents\Java12BilgeAdamBoost\Java_Project\Application_Course\_1_Jdbc\AtmProject\src\main\java\com\enes\util" />
       <recent name="C:\Users\enesb\Documents\Java12BilgeAdamBoost\Java_Project\Application_Course\_1_Jdbc\CarDealer\src\main\java\com\enes\utility" />
       <recent name="C:\Users\enesb\Documents\Java12BilgeAdamBoost\Java_Project\Theory_Course\_2_ORM\OrnekETicaret\src\main\resources" />
     </key>
@@ -118,7 +128,7 @@
       <recent name="com.enes.utility" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main (3)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.enes.Main" />
       <module name="OrnekETicaret.main" />
@@ -145,6 +155,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enes.Main" />
+      <module name="AtmProject.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.enes.Main" />
       <module name="Hibernate01.main" />
@@ -160,6 +183,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
@@ -287,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698415564885</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Hibernate, NLayer Architecture">
+      <option name="closed" value="true" />
+      <created>1698658577574</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1698658577574</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -321,6 +353,7 @@
     <MESSAGE value="Nlayerd Architecture" />
     <MESSAGE value="JDBC" />
     <MESSAGE value="Hibernate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hibernate" />
+    <MESSAGE value="Hibernate, NLayer Architecture" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hibernate, NLayer Architecture" />
   </component>
 </project>
