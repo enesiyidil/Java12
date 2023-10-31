@@ -8,5 +8,8 @@ import com.enes.utility.MyRepositoryFactory;
 
 import java.util.List;
 
-public class SatisRepository extends MyRepositoryFactory<Satis> {
+public class SatisRepository extends MyRepositoryFactory<Satis, Long> {
+    public SatisRepository() {
+        super(Satis.class);
+    }
 }

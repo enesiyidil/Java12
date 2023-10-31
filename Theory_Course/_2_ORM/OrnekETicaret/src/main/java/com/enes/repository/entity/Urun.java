@@ -15,15 +15,15 @@ public class Urun {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
-    String ad;
-    String barkod;
-    String marka;
-    String model;
-    BigDecimal fiyat;
-    Integer stok;
+    public Long id;
+    public String ad;
+    public String barkod;
+    public String marka;
+    public String model;
+    public BigDecimal fiyat;
+    public Integer stok;
 
     @Embedded
-    BaseEntity baseEntity;
+    public BaseEntity baseEntity;
 
 }

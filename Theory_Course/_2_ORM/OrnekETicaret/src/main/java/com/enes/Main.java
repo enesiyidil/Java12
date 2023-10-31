@@ -1,11 +1,14 @@
 package com.enes;
 
+import com.enes.criteriaornekler.CriteriaOrnekleri;
 import com.enes.enums.ECinsiyet;
+import com.enes.repository.UrunRepository;
 import com.enes.repository.entity.*;
 import com.enes.utility.HibernateUtility;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import java.lang.reflect.Field;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -15,6 +18,48 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
+        System.out.println("fields");
+        Class<Urun> myClass = Urun.class;
+
+        Field[] fields = myClass.getDeclaredFields();
+        for (Field field : fields) {
+            System.out.println("Field Name: " + field.getName());
+            System.out.println("Field Type: " + field.getType().getName());
+            System.out.println("---------------------");
+        }
+        Urun urunLaptop = Urun.builder()
+                .ad("Laptop")
+                .build();
+        new UrunRepository().findByEntity(urunLaptop).forEach(System.out::println);
+
+//        BaseEntity baseEntity = BaseEntity.builder()
+//                .durum(1)
+//                .olusturmaTarihi(System.currentTimeMillis())
+//                .guncellemeTarihi(System.currentTimeMillis())
+//                .build();
+//
+//        Urun urunLaptop = Urun.builder()
+//                .ad("Laptop")
+//                .fiyat(BigDecimal.valueOf(50000))
+//                .stok(5)
+//                .baseEntity(baseEntity)
+//                .build();
+//
+//        new UrunRepository().save(urunLaptop);
+
+//        CriteriaOrnekleri criteriaOrnekleri = new CriteriaOrnekleri();
+//        criteriaOrnekleri.findAll().forEach(System.out::println);
+//        criteriaOrnekleri.selectOneColumn().forEach(System.out::println);
+//        System.out.println(criteriaOrnekleri.selectOneColumnById(2L));
+//        System.out.println(criteriaOrnekleri.findUrunById(2L));
+//        criteriaOrnekleri.selectManyColumn().forEach(objects -> {
+//            System.out.println("id: " + objects[0] + " Ad: " + objects[1] + " fiyat: "
+//                    + (((BigDecimal)objects[2]).multiply(BigDecimal.valueOf(1.18)))
+//            );
+//        });
+//        criteriaOrnekleri.findAllByNameAndPriceGt("%Ş%", BigDecimal.valueOf(15)).forEach(System.out::println);
+
+        /*
         Session session = HibernateUtility.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
 
@@ -109,5 +154,7 @@ public class Main {
 
         transaction.commit();
         session.close();
+
+         */
     }
 }

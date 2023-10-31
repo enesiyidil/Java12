@@ -4,6 +4,9 @@ import com.enes.repository.entity.Urun;
 import com.enes.utility.MyRepositoryFactory;
 
 
-public class UrunRepository extends MyRepositoryFactory<Urun> {
+public class UrunRepository extends MyRepositoryFactory<Urun, Long> {
 
+    public UrunRepository() {
+        super(Urun.class);
+    }
 }
