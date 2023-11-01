@@ -2,9 +2,11 @@ package com.enes.criteriaornekler;
 
 import com.enes.repository.entity.Musteri;
 import com.enes.repository.entity.Urun;
+import com.enes.repository.views.VwUrun;
 import com.enes.utility.HibernateUtility;
 import org.hibernate.Session;
 
+import javax.persistence.Table;
 import javax.persistence.criteria.*;
 import java.math.BigDecimal;
 import java.util.List;
@@ -123,5 +125,32 @@ public class CriteriaOrnekleri {
         Predicate sonKosul = criteriaBuilder.and(p1, p2);
         criteriaQuery.select(root).where(sonKosul);
         return session.createQuery(criteriaQuery).getResultList();
+    }
+
+    /**
+     * Native Guery SQL kodları ile JPA(Hibernate) üzerinden sorgulama yapabilirsiniz.
+     */
+    public List<Urun> findAllNativeQuery(){
+        return session.createNativeQuery("SELECT * FROM " + Urun.class.getAnnotation(Table.class).name(), Urun.class).getResultList();
+    }
+
+    public List<VwUrun> findAllNativeQuery2(){
+        return session.createNativeQuery("SELECT * FROM " + Urun.class.getAnnotation(Table.class).name(), VwUrun.class).getResultList();
+    }
+
+    /**
+     * Named Query
+     * Kullanılacak dil: JPQL, HQL
+     * Entity üzerine yazılır
+     * SQL  --> SELECT * FROM tblmusteri
+     * JPQL --> SELECT m FROM Musteri m
+     * HQL  --> FROM Musteri
+     */
+    public List<Urun> findAllNamedQuery(){
+        return session.createNamedQuery("Urun.findAll", Urun.class).getResultList();
+    }
+
+    public List<Urun> findAllByAd(String urunAd){
+        return session.createNamedQuery("Urun.findByAd", Urun.class).setParameter("urunad", urunAd).getResultList();
     }
 }

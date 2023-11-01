@@ -1,36 +1,44 @@
 package com.enes;
 
 import com.enes.criteriaornekler.CriteriaOrnekleri;
-import com.enes.enums.ECinsiyet;
-import com.enes.repository.UrunRepository;
-import com.enes.repository.entity.*;
-import com.enes.utility.HibernateUtility;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-
-import java.lang.reflect.Field;
-import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("fields");
-        Class<Urun> myClass = Urun.class;
+        CriteriaOrnekleri criteriaOrnekleri = new CriteriaOrnekleri();
+        criteriaOrnekleri.findAllByAd("%e%").forEach(System.out::println);
 
-        Field[] fields = myClass.getDeclaredFields();
-        for (Field field : fields) {
-            System.out.println("Field Name: " + field.getName());
-            System.out.println("Field Type: " + field.getType().getName());
-            System.out.println("---------------------");
-        }
-        Urun urunLaptop = Urun.builder()
-                .ad("Laptop")
-                .build();
-        new UrunRepository().findByEntity(urunLaptop).forEach(System.out::println);
+
+//        System.out.println("fields");
+//        Class<Urun> myClass = Urun.class;
+//
+//        Field[] fields = myClass.getDeclaredFields();
+//        for (Field field : fields) {
+//            System.out.println("Field Name: " + field.getName());
+//            System.out.println("Field Type: " + field.getType().getName());
+//            System.out.println("---------------------");
+//        }
+//        Urun urunLaptop = Urun.builder()
+//                .ad("Laptop")
+//                .fiyat(BigDecimal.valueOf(50000))
+//                .stok(5)
+//                .build();
+//
+//        new UrunRepository().findByEntity2(urunLaptop).forEach(System.out::println);
+//        new UrunRepository().findByColumnNameAndValue("fiyat", BigDecimal.valueOf(50000)).forEach(System.out::println);
+//
+//
+//
+//        new UrunRepository().findByCondition((criteriaBuilder, root) -> {
+//            Predicate p1 = criteriaBuilder.like(root.get("ad"), "Laptop");
+//            Predicate p2 = criteriaBuilder.greaterThan(root.get("fiyat"), BigDecimal.valueOf(5));
+//            return criteriaBuilder.or(p1, p2);
+//        }).forEach(System.out::println);
+
+
+
+
+
 
 //        BaseEntity baseEntity = BaseEntity.builder()
 //                .durum(1)

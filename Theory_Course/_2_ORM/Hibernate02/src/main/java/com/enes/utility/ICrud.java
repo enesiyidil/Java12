@@ -3,7 +3,6 @@ package com.enes.utility;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
-import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 
