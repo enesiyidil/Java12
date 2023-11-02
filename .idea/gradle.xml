@@ -13,6 +13,15 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Application_Course/_2_ORM/ProductManagement" />
+        <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Application_Course/_2_ORM/ProductManagement" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/Application_Course/_2_ORM/_1_Hibernate" />
         <option name="gradleHome" value="" />
         <option name="modules">
@@ -44,6 +53,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Theory_Course/_2_ORM/OrnekETicaret" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Theory_Course/_2_ORM/Relations" />
+        <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Theory_Course/_2_ORM/Relations" />
           </set>
         </option>
       </GradleProjectSettings>

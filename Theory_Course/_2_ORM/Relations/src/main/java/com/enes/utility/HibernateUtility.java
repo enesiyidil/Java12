@@ -9,9 +9,7 @@ public class HibernateUtility {
 
     static {
         try {
-            Configuration configuration = new Configuration();
-            configuration.addPackage("com.enes.entity");
-            SESSION_FACTORY = configuration.configure().buildSessionFactory();
+            SESSION_FACTORY = new Configuration().configure().buildSessionFactory();
         } catch (Exception e) {
             System.out.println("Hibernate SessionFactory'de hata! " + e.getMessage());
         }
