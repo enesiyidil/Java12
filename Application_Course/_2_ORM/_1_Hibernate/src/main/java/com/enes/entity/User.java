@@ -11,6 +11,7 @@ import java.util.Map;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@ToString
 @Builder
 @Entity
 @Table(name = "users")
@@ -38,4 +39,17 @@ public class User {
 
     @ElementCollection
     private Map<EAddressType, Address> addresses;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", information=" + information +
+                ", password='" + password + '\'' +
+                ", username='" + username + '\'' +
+                ", gender=" + gender +
+                ", interests=" + interests +
+                ", addresses=" + addresses +
+                '}';
+    }
 }

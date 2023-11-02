@@ -9,7 +9,7 @@ import java.util.Date;
 
 public class PostService {
 
-    public void createPost(){
+    public void createPost() {
         Session session = HibernateUtility.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
 
@@ -18,8 +18,26 @@ public class PostService {
                 .date(new Date())
                 .userId(1L)
                 .build();
-        session.save(post);
+        Post post2 = Post.builder()
+                .content("Süperrrr")
+                .date(new Date())
+                .userId(2L)
+                .build();
+        Post post3 = Post.builder()
+                .content("JAva Day")
+                .date(new Date())
+                .userId(1L)
+                .build();
+        Post post4 = Post.builder()
+                .content("Mükkemmel bir hafta oluyor")
+                .date(new Date())
+                .userId(1L)
+                .build();
 
+        session.save(post);
+        session.save(post2);
+        session.save(post3);
+        session.save(post4);
         transaction.commit();
         session.close();
     }
