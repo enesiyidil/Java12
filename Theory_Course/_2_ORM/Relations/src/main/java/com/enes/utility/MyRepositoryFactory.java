@@ -59,8 +59,9 @@ public class MyRepositoryFactory<T, ID> implements ICrud<T, ID> {
 
     @Override
     public void deleteById(ID id) {
+        T t = findById(id).get();
         openSession();
-        session.delete(session.get(clazz, (Serializable) id));
+        session.delete(t);
         closeSession();
     }
 

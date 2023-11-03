@@ -9,6 +9,8 @@ One-to-Many bidirectional ilişkilerde
 1 departmanda birden çok personel olabilir.
 1 personel bir departmanda çalışabilir.
 
+Bu tür ilişkilerde veriler karşılıklı olarak 2 nesne tarafından verilimeli.
+
 Departman - Personel ilişkisi one-tomany bu ilişki türünde many olan tarafa (**Personel**) yeni bir sütun ekleriz.
 Ve bu sütunda one tarafındaki (**Departman**) PK'yi (**id**) FK (**departman_id**) olarak tutarız.
 

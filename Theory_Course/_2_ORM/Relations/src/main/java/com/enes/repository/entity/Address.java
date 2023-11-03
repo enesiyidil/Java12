@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -21,4 +23,18 @@ public class Address {
     String city;
     String street;
     String number;
+
+    @ManyToMany(mappedBy = "addresses", fetch = FetchType.EAGER)
+    List<Personel> personels = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "id=" + id +
+                ", city='" + city + '\'' +
+                ", street='" + street + '\'' +
+                ", number='" + number + '\'' +
+                ", personel ad='" + personels.stream().map(Personel::getName).toList() + '\'' +
+                '}';
+    }
 }
