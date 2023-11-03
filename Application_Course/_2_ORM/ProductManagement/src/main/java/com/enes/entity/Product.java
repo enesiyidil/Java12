@@ -30,10 +30,10 @@ public class Product {
     @JoinColumn(name = "category_id")
     private Category category;
 
-    @OneToMany(mappedBy = "product")
+    @OneToMany(mappedBy = "product", fetch = FetchType.EAGER)
     private List<ProductDetail> productDetails;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
 //    @JoinTable(name = "products__customers", joinColumns = @JoinColumn(name = "productid"), inverseJoinColumns = @JoinColumn(name = "custemerid"))
     private List<Customer> customers;
 }

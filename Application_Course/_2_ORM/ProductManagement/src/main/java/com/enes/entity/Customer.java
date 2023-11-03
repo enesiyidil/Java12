@@ -27,6 +27,6 @@ public class Customer {
     @Embedded
     private Information information;
 
-    @ManyToMany(mappedBy = "customers")
+    @ManyToMany(mappedBy = "customers", fetch = FetchType.EAGER)
     private List<Product> products;
 }

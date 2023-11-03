@@ -1,5 +1,6 @@
 package com.enes.utility;
 
+import lombok.Getter;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -13,23 +14,27 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Getter
 public class MyRepositoryFactory<T, ID> implements ICrud<T, ID> {
 
     private Session session;
     private Transaction transaction;
+    private CriteriaBuilder criteriaBuilder;
 
     Class<T> clazz;
 
     public MyRepositoryFactory(Class<T> clazz) {
         this.clazz = clazz;
+
     }
 
-    private void openSession() {
+    protected void openSession() {
         session = HibernateUtility.getSessionFactory().openSession();
         transaction = session.beginTransaction();
+        criteriaBuilder = session.getCriteriaBuilder();
     }
 
-    private void closeSession() {
+    protected void closeSession() {
         transaction.commit();
         session.close();
     }

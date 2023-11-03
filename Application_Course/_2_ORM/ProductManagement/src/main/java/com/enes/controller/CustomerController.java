@@ -5,6 +5,8 @@ import com.enes.entity.Information;
 import com.enes.service.CustomerService;
 import com.enes.utility.BAUtils;
 
+import java.util.Optional;
+
 public class CustomerController {
 
     private final CustomerService customerService;
@@ -31,5 +33,11 @@ public class CustomerController {
                 .information(information)
                 .build();
         customerService.register(customer);
+    }
+
+    public Optional<Customer> login(){
+        String identity = BAUtils.readString("TC'niz: ");
+        String password = BAUtils.readString("Şifreniz: ");
+        return customerService.findCustomerByIdentity(identity, password);
     }
 }
