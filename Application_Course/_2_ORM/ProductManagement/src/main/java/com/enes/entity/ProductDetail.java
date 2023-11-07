@@ -25,4 +25,13 @@ public class ProductDetail {
 
     @ManyToOne
     private Product product;
+
+    @Override
+    public String toString() {
+        return "ProductDetail{" +
+                "id=" + id +
+                ", comment='" + comment + '\'' +
+                ", score=" + score +
+                '}';
+    }
 }

@@ -3,6 +3,7 @@ package com.enes.service;
 import com.enes.entity.Product;
 import com.enes.repository.ProductRepository;
 
+import java.util.List;
 import java.util.Optional;
 
 public class ProductService {
@@ -33,5 +34,17 @@ public class ProductService {
 
     public void update(Product product) {
         productRepository.update(product);
+    }
+
+    public List<Product> findAll() {
+        return productRepository.findAll();
+    }
+
+    public Optional<Product> findById(Long id) {
+        return productRepository.findById(id);
+    }
+
+    public List<Product> findProductByLessThan10InStock() {
+        return productRepository.findByCondition((criteriaBuilder, productRoot) -> criteriaBuilder.lessThanOrEqualTo(productRoot.get("stock"), 10));
     }
 }

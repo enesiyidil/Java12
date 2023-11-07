@@ -6,6 +6,7 @@ import com.enes.entity.Product;
 import com.enes.service.ProductService;
 import com.enes.utility.BAUtils;
 
+import java.util.List;
 import java.util.Optional;
 
 public class ProductController {
@@ -41,5 +42,17 @@ public class ProductController {
         optionalProduct.get().getCustomers().add(customer);
         optionalProduct.get().setStock(optionalProduct.get().getStock() - amount);
         productService.update(optionalProduct.get());
+    }
+
+    public List<Product> findAll() {
+        return productService.findAll();
+    }
+
+    public Optional<Product> findById(Long id) {
+        return productService.findById(id);
+    }
+
+    public List<Product> findProductByLessThan10InStock() {
+        return productService.findProductByLessThan10InStock();
     }
 }

@@ -12,7 +12,7 @@ public class HibernateUtility {
         try {
             Configuration configuration = new Configuration();
 
-            configuration.addPackage("com.enes.entity.*");
+//            configuration.addPackage("com.enes.entity.*");
             configuration.addAnnotatedClass(Admin.class);
             configuration.addAnnotatedClass(Category.class);
             configuration.addAnnotatedClass(Customer.class);

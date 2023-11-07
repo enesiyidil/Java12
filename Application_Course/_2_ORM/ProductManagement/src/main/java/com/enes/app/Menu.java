@@ -3,6 +3,7 @@ package com.enes.app;
 import com.enes.controller.CategoryController;
 import com.enes.controller.CustomerController;
 import com.enes.controller.ProductController;
+import com.enes.controller.ProductDetailController;
 import com.enes.entity.Customer;
 import com.enes.utility.BAUtils;
 
@@ -14,10 +15,13 @@ public class Menu {
     private final CategoryController categoryController;
     private final ProductController productController;
 
+    private final ProductDetailController productDetailController;
+
     public Menu() {
         this.customerController = new CustomerController();
         this.categoryController = new CategoryController();
         this.productController = new ProductController();
+        this.productDetailController = new ProductDetailController();
     }
 
     public void menu(){
@@ -41,6 +45,7 @@ public class Menu {
         HashMap<Integer, String> menuItems = new HashMap<>();
         menuItems.put(1, "Product Ekle");
         menuItems.put(2, "Category Ekle");
+        menuItems.put(3, "Tum Productlari Listele");
 
         int key = BAUtils.menu(menuItems);
 
@@ -50,6 +55,9 @@ public class Menu {
                 break;
             case 2:
                 categoryController.save();
+                break;
+            case 3:
+                productController.findAll().forEach(System.out::println);
                 break;
         }
     }
@@ -73,6 +81,9 @@ public class Menu {
     private void customerManagerMenu(Customer customer) {
         HashMap<Integer, String> menuItems = new HashMap<>();
         menuItems.put(1, "Satın Al");
+        menuItems.put(2, "Ürüne Yorum yap ve puan ver");
+        menuItems.put(3, "Stoğu bitmek üzere olan ürünleri listele(10 adet ve aşağısı)");
+        menuItems.put(4, "Ürüne göre Yorumları göster");
 
         int key = BAUtils.menu(menuItems);
 
@@ -81,7 +92,13 @@ public class Menu {
                 productController.buyProduct(customer);
                 break;
             case 2:
-
+                productDetailController.addComment();
+                break;
+            case 3:
+                productController.findProductByLessThan10InStock().forEach(System.out::println);
+                break;
+            case 4:
+                productDetailController.findAllByProductId().forEach(System.out::println);
                 break;
         }
     }

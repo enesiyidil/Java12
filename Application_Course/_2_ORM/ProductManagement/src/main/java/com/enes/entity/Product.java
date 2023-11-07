@@ -30,7 +30,7 @@ public class Product {
     @JoinColumn(name = "category_id")
     private Category category;
 
-    @OneToMany(mappedBy = "product", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "product")
     private List<ProductDetail> productDetails;
 
     @ManyToMany(fetch = FetchType.EAGER)

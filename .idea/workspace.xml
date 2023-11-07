@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="25ff5eef-863f-4963-9ccd-23d7d80f7f83" name="Changes" comment="Hibernate Relations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application_Course/_2_ORM/ProductManagement/src/main/java/com/enes/app/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application_Course/_2_ORM/ProductManagement/src/main/java/com/enes/app/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application_Course/_2_ORM/ProductManagement/src/main/java/com/enes/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application_Course/_2_ORM/ProductManagement/src/main/java/com/enes/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application_Course/_2_ORM/ProductManagement/src/main/java/com/enes/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application_Course/_2_ORM/ProductManagement/src/main/java/com/enes/service/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,10 +100,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "C:/Users/enesb/Documents/Java12BilgeAdamBoost/Java_Project/Application_Course/_2_ORM/_1_Hibernate/src/main/java/com/enes/utility",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "last_opened_file_path": "C:/Users/enesb/Documents/Java12BilgeAdamBoost/Java_Project",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -207,6 +214,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698318391817</updated>
+      <workItem from="1699357975867" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="Nlayerd Architecture">
       <option name="closed" value="true" />
